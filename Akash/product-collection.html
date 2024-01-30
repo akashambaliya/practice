@@ -1,0 +1,805 @@
+<html>
+<head>
+    <title>product-collection</title>
+    <link rel="stylesheet" href="./css/demo.css">
+</head>
+<body>
+<div class="main_navbar">
+    <div class="nav_bar">
+        <h1>Microcart</h1>
+        <div class="gen_menu">
+            <p>General</p>
+            <li>
+                <img src="./img/Frame.png" alt="">
+                <a href="#">Dashboard </a>
+                <span class="gen_arrow"><img src="./img/Vector.png"></span>
+            </li>
+            <li>
+                <img src="./img/Frame (1).png" alt="">
+                <a href="#">Order</a>
+                <span class="gen_arrow"><img src="./img/Vector.png"></span>
+            </li>
+            <li>
+                <img src="./img/Frame (2).png" alt="">
+                <a href="#">Products</a>
+                <span class="gen_arrow"><img src="./img/Vector.png"></span>
+            </li>
+            <li>
+                <img src="./img/Icon.png" alt="">
+                <a href="#">Customers</a>
+                <span class="gen_arrow"><img src="./img/Vector.png"></span>
+            </li>
+            <li>
+                <img src="./img/Frame (3).png" alt="">
+                <a href="#">Discount</a>
+                <span class="gen_arrow"><img src="./img/Vector.png"></span>
+            </li>
+            <li>
+                <img src="./img/Frame (4).png" alt="">
+                <a href="#">Gift Cards</a>
+                <span class="gen_arrow"><img src="./img/Vector.png"></span>
+            </li>
+            <li>
+                <img src="./img/Frame (5).png" alt="">
+                <a href="#">Pricing</a>
+                <span class="gen_arrow"><img src="./img/Vector.png"></span>
+            </li>  
+        </div>
+        <div class="Sales_Channels">
+            <p>Sales Channels</p>
+            <a href="#">
+                <img src="./img/Frame (6).png" alt="">
+                Onlin Store
+                
+            </a>
+
+        </div>
+        <div class="trial_class">
+            <h3>Your trial just started</h3>
+            <p>Your trial ends on January 20.</p>
+            <p>Select a plan to extend your trial for just ₹20/month for your first 3 months.</p>
+
+            <button>Select Plan</button>
+            <!-- <a href="#"><p>Select Plan</p></a>  -->
+        </div>
+        <div class="help">
+            <img src="./img/Frame (7).png" alt="">
+            <a href="#">Help</a>
+        </div>
+        <div class="setting">
+            <img src="./img/Frame (8).png" alt="">
+            <a href="#">Settings</a>
+        </div>
+
+    </div>
+
+
+    <div class="main_top">
+        <div class="topbar1">
+            <div class="topbar">
+                <a href="#"><img src="./img/Vector (1).png" alt=""></a>
+                <div class="top_div1">
+                    <a href="#">Home</a>
+                    <p>/</p>
+                    <p style="font-size: 20px;"><b>Products</b></p>
+                </div>
+            </div>
+            <div class="search_bar">
+                <div class="input border">
+                    <a href="#"> <img src="./img/Frame (10).png" alt=""></a>
+                    <input type="text" placeholder="Search">
+                    <!-- <p>Search</p> -->
+                    <span><p>⌘+K </p></span>
+                </div>
+                <span><a href="#">
+                    <img src="./img/Frame (11).png" alt="">
+                </a></span>
+                <a href="#">
+                    <div class="DM_border">
+                    <p><b>DM</b></p>
+                    <img src="./img/Vector.png" alt="">
+                </div></a>
+            </div>
+        </div>
+
+<!-- <===========================product page==========================> -->
+        
+        <div class="table">
+            <div class="table_menu1" id="table-menu1">
+                <div class="table_menu">
+                    <a href="#" onclick="toggleDivs1()">
+                        <li>Products</li>
+                    </a>
+                    <a href="#" onclick="toggleDivs2()"">
+                        <li>Collection</li>
+                    </a>
+                </div>
+                <div class="tablemenu2 flex">
+                    <a href="#" class="a" style="margin: 0 10px;">
+                        <div class="button">
+                            <img src="./img/Frame (12).png" alt="">
+                            <p>Add Product</p>
+                        </div>
+                    </a>
+                    <a href="#"  id="dot" onclick="ProductFrame()"><img src="./img/3dot.png" alt=""></a>
+                </div>
+            </div>
+            <div class="absolute border product_frame" id="product-frame" style="display:none;" >
+                <a href="#" class="a product_frame_a"><img src="./img/upload.png" alt="" style="padding-right: 10px;">Export Products
+                </a>
+                <a href="#" class="a product_frame_a"><img src="./img/import.png" alt="" style="padding-right: 10px;">Import Products
+                </a>
+                <a href="#" class="a product_frame_a"><img src="./img/plus.png" alt="" style="padding-right: 10px;">Add Products
+                </a>  
+            </div>
+            <div class="product_page" id="product-page"  style="display: block;">
+                <table >
+                    <tr>
+                        <td colspan="5">
+                            <div class="search_input1" >
+                                <div class="search_input">
+                                    <a href="#"> <img src="./img/search.png" alt=""></a>
+                                    <input type="text" placeholder="Search by product name">
+                                </div>
+                                <div class="filter1">
+                                    <span><p>Filter</p></span>
+                                    <span class="select">
+                                        <select>
+                                            <option value="1">01</option>
+                                            <option value="1">02</option>
+                                        </select>
+                                    </span>
+                                    <span><a href="#"> <img src="./img/Vector.png" alt=""></a></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Product Name
+                            <div class="arrow">
+                                <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
+                                <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
+                            </div>
+                        </th>
+                        <th>Collection
+                            <div class="arrow">
+                                <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
+                                <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
+                            </div>
+                        </th>
+                        <th>Status</th>
+                        <th>Availability
+                            <div class="arrow">
+                                <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
+                                <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
+                            </div>
+                        </th>
+                        <th>Inventory</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar.png" alt="">
+                            <p>WoolenWhisper</p>
+                        </td>
+                        <td>Women's Wear 
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td>
+                            <span class="published">Published</span></td>
+                        <td>Website
+                            <span class="count_collection">+3</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (1).png" alt="">
+                            <p>VelvetVogue</p>
+                        </td>
+                        <td>Women's Wear
+                            <span class="count_collection">+1</span>
+                        </td>
+                        <td><span class="draft">Draft</span></td>
+                        <td>-</td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (2).png" alt="">
+                            <p>SilkSerenity</p>
+                        </td>
+                        <td>-</td>
+                        <td><span class="published">Published</span></td>
+                        <td>App
+                            <span class="count_collection">+2</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (3).png" alt="">
+                            <p>DenimDazzle</p>
+                        </td>
+                        <td>Top Wear
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td><span class="published">Published</span></td>
+                        <td>Shopee
+                            <span class="count_collection">+5</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (4).png" alt="">
+                            <p>SatinSculpt</p>
+                        </td>
+                        <td>Top Wear
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td><span class="published">Published</span></td>
+                        <td>Lazada
+                            <span class="count_collection">+7</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (5).png" alt="">
+                            <p>CottonCharm</p>
+                        </td>
+                        <td>Women's Wear
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td><span class="draft">Draft</span></td>
+                        <td>Website
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (6).png" alt="">
+                            <p>TweedTreasure</p>
+                        </td>
+                        <td>Women's Wear
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td><span class="draft">Draft</span></td>
+                        <td>Amazon
+                            <span class="count_collection">+5</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (7).png" alt="">
+                            <p>LaceLoom</p>
+                        </td>
+                        <td>Women's Wear
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td><span class="published">Published</span></td>
+                        <td>App
+                            <span class="count_collection">+2</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (8).png" alt="">
+                            <p>ChiffonChic</p>
+                        </td>
+                        <td>Women's Wear
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td><span class="published">Published</span></td>
+                        <td>Shopee
+                            <span class="count_collection">+5</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (9).png" alt="">
+                            <p>OrganzaOpulence</p>
+                        </td>
+                        <td>Top Wear
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td><span class="draft">Draft</span></td>
+                        <td>Website
+                            <span class="count_collection">+3</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Avatar (10).png" alt="">
+                            <p>TaffetaTrend</p>
+                        </td>
+                        <td>Top Wear
+                            <span class="count_collection">+12</span>
+                        </td>
+                        <td><span class="draft">Draft</span></td>
+                        <td>Website
+                            <span class="count_collection">+3</span>
+                        </td>
+                        <td>120 in stock for 2 variant(s)
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <div class="ination">
+                                <span class="prev_pagination">
+                                    <a href="#"><img src="./img/Vector (1).png" alt=""></a>
+                                </span>
+                                <ul><li><a href="">1</a></li></ul>
+                                <ul><li><a href="">2</a></li></ul>
+                                <ul><li><a href="">3</a></li></ul>
+                                <ul><li><a href="">...</a></li></ul>
+                                <ul><li><a href="">8</a></li></ul>
+                                <ul><li><a href="">9</a></li></ul>
+                                <ul><li><a href="">10</a></li></ul>
+                                <span class="next_pagination">
+                                    <a href="#"><img src="./img/Vector (1).png" alt=""></a>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+
+         
+        <!-- <-------------------------Collection page--------------------------->
+
+            
+            
+        <div id="collection-page" class="collection_page" style="display: none;">
+            <div class="table">
+                <div class="table_menu1">
+                    <div class="table_menu">
+                        <a href="#" onclick="toggleDivs1()">
+                            <li>Products</li>
+                        </a>
+                        <a href="#" onclick="toggleDivs2()">
+                            <li>Collection</li>
+                        </a>
+                    </div>
+                    <div class="tablemenu2">
+                        <a href="#" onclick="togglePopup()" class="a">
+                            <div class="button">
+                                <img src="./img/Frame (12).png" alt="">
+                                <p>Add Collection</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <td colspan="5">
+                            <div class="search_input1">
+                                <div class="search_input">
+                                    <a href="#"> <img src="./img/search.png" alt=""></a>
+                                    <input type="text" placeholder="Search by product name">
+                                </div>
+                                <div class="filter1">
+                                    <span class="filter"><p>Filter</p></span>
+                                    <span><a href="#"> <img src="./img/Vector.png" alt=""></a></span>
+                                </div>
+                            </div> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Collection
+                            <div class="arrow">
+                                <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
+                                <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
+                            </div>
+                        </th>
+                        <th>Handle
+                            <div class="arrow">
+                                <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
+                                <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
+                            </div>
+                        </th>
+                        <th>Created  at</th>
+                        <th>Updated at
+                            <div class="arrow">
+                                <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
+                                <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
+                            </div>
+                        </th>
+                        <th>Products</th>
+                    </tr>
+                    <tr>
+                        <td>Ethnic Wear</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Top Wear</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bottom Wear</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Women’s Wear</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Men’s wear</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Best Collection</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Best Seller</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>All time best</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Crop Tops</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Children Wear</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ethnic Wear</td>
+                        <td>/Ethnic Wear</td>
+                        <td>9 May 2025</td>
+                        <td>12 May 2024</td>
+                        <td>1200
+                            <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <div class="ination">
+                                <span class="prev_pagination">
+                                    <a href="#"><img src="./img/Vector (1).png" alt=""></a>
+                                </span>
+                                <ul><li><a href="">1</a></li></ul>
+                                <ul><li><a href="">2</a></li></ul>
+                                <ul><li><a href="">3</a></li></ul>
+                                <ul><li><a href="">...</a></li></ul>
+                                <ul><li><a href="">8</a></li></ul>
+                                <ul><li><a href="">9</a></li></ul>
+                                <ul><li><a href="">10</a></li></ul>
+                                <span class="next_pagination">
+                                    <a href="#"><img src="./img/Vector (1).png" alt=""></a>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <==========================cProduct popup======================================> -->
+
+<div class="add_group border" id="popupContainer" style="display: none;">
+    <div class="add_group_header">
+        <h2 class="h2 font-color">Add Collection</h2>
+        <a href="#" onclick="closePopup()" class="border close"><img src="./img/x.png" alt=""></a>
+    </div>
+    <div class="add_group_pop flex">
+        <div class="sub_add_group_pop">
+            <li class="li "><a href="#" class="a font-color font-size">General Details</a></li>
+            <li class="li "><a href="#" class="a font-color font-size">Sales Channel</a></li>
+            <li class="li "><a href="#" class="a font-color font-size">Variants</a></li>
+            <li class="li "><a href="#" class="a font-color font-size">Attributes</a></li>
+            <li class="li "><a href="#" class="a font-color font-size">Sale</a></li>
+            <li class="li "><a href="#" class="a font-color font-size">SEO</a></li>
+        </div>
+        <div class="main_detail">
+            <div class="details">
+                <h3 class="font-color" style="margin: 0px;">Details</h3>
+                <p class="font-color" style="margin: 10px 0;">Please enter a title and handle of Collection</p>
+            </div>
+            <div class="flex">
+                <div class="title">
+                    <p>Search</p>
+                    <div class="title_input">
+                        <input class="border" type="text" placeholder="Winter Jacket">
+                        <img class="title_img" src="./img/Vector (4).png" alt="">
+                    </div>
+                </div>
+                <div class="title">
+                    <p>Sub Title</p>
+                    <div class="title_input">
+                        <input class="border" type="text" placeholder="Winter Jacket/">
+                        <img class="title_img" src="./img/Vector (4).png" alt="">
+                    </div>
+                </div>
+                <div class="title">
+                    <p>Headline</p>
+                    <div class="title_input">
+                        <input class="border" type="text" placeholder="Winter Jacket">
+                        <img class="title_img" src="./img/Vector (4).png" alt="">
+                    </div>
+                </div>
+                <div class="title">
+                    <p>Material</p>
+                    <div class="title_input">
+                        <input class="border" type="text" placeholder="Winter Jacket/">
+                        <img class="title_img" src="./img/Vector (4).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main_meta_data">
+                <div class="meta_data flex">
+                    <div class="meta_data_detail">
+                        <h3 class="font-color" style="margin: 0px;">Meta Data</h3>
+                        <p class="font-color" style="margin: 10px 0;">Add variations of this product.</p>
+                    </div>
+                    <div class="meta_data_button">
+                        <img src="./img/Vector (5).png" alt="">
+                        <div class="meta_plus_button">
+                            <a href="#" class="a border">
+                                <img src="./img/Icon (1).png" alt="">
+                                <p>Add</p> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="title key">
+                        <p>Key</p>
+                        <div class="key_input">
+                            <input class="border" type="text" placeholder="Key">
+                            <img class="title_img" src="./img/Vector (4).png" alt="">
+                        </div>
+                        <div class="key_input">
+                            <input class="border" type="text" placeholder="Key">
+                            <img class="title_img" src="./img/Vector (4).png" alt="">
+                        </div>
+                    </div>
+                    <div class="title value">
+                        <p>Value</p>
+                        <div class="key_input">
+                            <input class="border" type="text" placeholder="Value">
+                            <img class="title_img" src="./img/Vector (4).png" alt="">
+                        </div>
+                        <div class="key_input">
+                            <input class="border" type="text" placeholder="Value">
+                            <img class="title_img" src="./img/Vector (4).png" alt="">
+                        </div>
+                    </div>
+                    <div class="deletebutton">
+                        <div class="delele_button">
+                            <a href="#" ><img class="border" src="./img/Icon (2).png" alt=""></a>
+                        </div>
+                        <div class="delele_button">
+                            <a href="#"><img class="border" src="./img/Icon (2).png" alt=""></a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="next">
+                    <a href="#" class="a">Next</a>
+                </div>  
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+<!-- <==========================collection popup======================================> -->
+
+<div class="add_group border" id="popupContainer" style="display: none;">
+    <div class="add_group_header">
+        <h2 class="h2 font-color">Add Collection</h2>
+        <a href="#" onclick="closePopup()" class="border close"><img src="./img/x.png" alt=""></a>
+    </div>
+    <div class="add_group_pop flex">
+        <div class="sub_add_group_pop">
+            <li class="li "><a href="#" class="a font-color font-size">General Details</a></li>
+            <li class="li "><a href="#" class="a font-color font-size">Customer</a></li>
+        </div>
+        <div class="main_detail">
+            <div class="details">
+                <h3 class="font-color" style="margin: 0px;">Details</h3>
+                <p class="font-color" style="margin: 10px 0;">Please enter a title and handle of Collection</p>
+            </div>
+            <div class="flex">
+                <div class="title">
+                    <p>Title</p>
+                    <div class="title_input">
+                        <input class="border" type="text" placeholder="Winter Jacket">
+                        <img class="title_img" src="./img/Vector (4).png" alt="">
+                    </div>
+                </div>
+                <div class="title">
+                    <p>Handled</p>
+                    <div class="title_input">
+                        <input class="border" type="text" placeholder="Winter Jacket/">
+                        <img class="title_img" src="./img/Vector (4).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main_meta_data">
+                <div class="meta_data flex">
+                    <div class="meta_data_detail">
+                        <h3 class="font-color" style="margin: 0px;">Meta Data</h3>
+                        <p class="font-color" style="margin: 10px 0;">Add variations of this product.</p>
+                    </div>
+                    <div class="meta_data_button">
+                        <img src="./img/Vector (5).png" alt="">
+                        <div class="meta_plus_button">
+                            <a href="#" class="a border">
+                                <img src="./img/Icon (1).png" alt="">
+                                <p>Add</p> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="title key">
+                        <p>Key</p>
+                        <div class="key_input">
+                            <input class="border" type="text" placeholder="Key">
+                            <img class="title_img" src="./img/Vector (4).png" alt="">
+                        </div>
+                        <div class="key_input">
+                            <input class="border" type="text" placeholder="Key">
+                            <img class="title_img" src="./img/Vector (4).png" alt="">
+                        </div>
+                    </div>
+                    <div class="title value">
+                        <p>Value</p>
+                        <div class="key_input">
+                            <input class="border" type="text" placeholder="Value">
+                            <img class="title_img" src="./img/Vector (4).png" alt="">
+                        </div>
+                        <div class="key_input">
+                            <input class="border" type="text" placeholder="Value">
+                            <img class="title_img" src="./img/Vector (4).png" alt="">
+                        </div>
+                    </div>
+                    <div class="deletebutton">
+                        <div class="delele_button">
+                            <a href="#" ><img class="border" src="./img/Icon (2).png" alt=""></a>
+                        </div>
+                        <div class="delele_button">
+                            <a href="#"><img class="border" src="./img/Icon (2).png" alt=""></a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="next">
+                    <a href="#" class="a">Next</a>
+                </div>  
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+    var product_page = document.getElementById('product-page');
+    var collection_page = document.getElementById('collection-page');
+    var table_menu1 = document.getElementById('table-menu1');
+    
+    function toggleDivs1() {
+      if (product_page.style.display !== 'block') {
+        product_page.style.display = 'block';
+        table_menu1.style.display = '';
+        collection_page.style.display = 'none';
+      } 
+    }
+    function toggleDivs2() {
+      if (collection_page.style.display === 'none'){
+        product_page.style.display = 'none';
+        table_menu1.style.display = 'none'
+        collection_page.style.display = 'block';
+      }
+    }
+    function ProductFrame(){
+        var product_frame = document.getElementById('product-frame');
+        if(product_frame.style.display === 'none'){
+            product_frame.style.display = 'block';
+        }else {
+            product_frame.style.display = 'none';
+        }
+    }
+
+    // <================== PopUp Add Group =============================>
+
+    function togglePopup() {
+        var popupContainer = document.getElementById('popupContainer');
+        popupContainer.style.display = 'block';
+        
+    }
+
+    function closePopup() {
+        var popupContainer = document.getElementById('popupContainer');
+        popupContainer.style.display = 'none';
+    }
+</script>
+</body>
+</html>
