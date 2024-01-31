@@ -1,15 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
-
-@font-face {
-  font-family: "General Sans Variable";
-  src:  url('./fonts/GeneralSans-Regular.otf') format('opentype'),
-        url('./fonts/myfont.ttf') format('truetype');
-}
-
 body{
     margin: 0;
+    font-family: "General Sans Variable";
 }
 .main_navbar{
     display: flex;
@@ -474,6 +466,7 @@ span .count_collection{
     top: 15%;
     left: 20%;
     background-color: cadetblue;
+    overflow: scroll;
     
 }
 .add_group_header{
@@ -509,7 +502,7 @@ span .count_collection{
 }
 
 .add_group_pop{  
-    height: 100%;      
+    /* height: 100%;       */
 }
 .sub_add_group_pop{
     border-right: 1px solid #F0F0F0;
@@ -518,11 +511,11 @@ span .count_collection{
 .main_detail{
     margin: 15px;
     width: 100%;
-    height: 32em;
+     /* height: 32em; */
 }
 .title{
     margin-top: 30px;
-    width: 50%;
+    width: 100%;
     
 }
 .title:first-child{
@@ -556,7 +549,7 @@ span .count_collection{
 .meta_data_button{
     position: absolute;
     right: 0px;
-    top: 13px;
+    top: 22px;
 }
 .meta_data_button .meta_plus_button a{
     padding: 15px;
@@ -588,6 +581,7 @@ span .count_collection{
 .deletebutton{
     position: relative;
     top: 74px;
+    height: 100%;
 }
 /* .deletebutton .delele_button a{
     padding: 15px;
@@ -598,18 +592,33 @@ span .count_collection{
 }
 
 .next{
-    position: relative;
-
-    
+    margin-top: 20px;
 }
 .next a{
-    position: absolute;
-    padding: 15px 35px;
+    padding: 0.75rem;
     display: block;
-    margin-top: 20px;
-    right: 0;
-    background-color: #1CA1AA;
+    margin-left: auto;
+    width: 100px !important;
+    background: #1CA1AA;
+    text-align: center;
 }
-.bg{
-    
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+}
+
+
+.collection{
+    position: unset;
+    padding: 15px;
+    background: white;
+    color: #938B9A;
+    width: 100%;
+}
+
+.collection_img{
+    position: absolute;
+    top: 20px;
+    right: 15px;
 }

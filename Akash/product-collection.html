@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="./css/demo.css">
 </head>
 <body>
+   
 <div class="main_navbar">
     <div class="nav_bar">
         <h1>Microcart</h1>
@@ -557,11 +558,11 @@
         </div>
     </div>
 </div>
-<!-- <==========================cProduct popup======================================> -->
+<!-- <==========================Add Product popup======================================> -->
 
-<div class="add_group border" id="popupContainer" style="display: none;">
+<div class="add_group border" id="" style="display: block;">
     <div class="add_group_header">
-        <h2 class="h2 font-color">Add Collection</h2>
+        <h2 class="h2 font-color">Add Product</h2>
         <a href="#" onclick="closePopup()" class="border close"><img src="./img/x.png" alt=""></a>
     </div>
     <div class="add_group_pop flex">
@@ -593,6 +594,8 @@
                         <img class="title_img" src="./img/Vector (4).png" alt="">
                     </div>
                 </div>
+            </div>
+            <div class="flex">
                 <div class="title">
                     <p>Headline</p>
                     <div class="title_input">
@@ -608,7 +611,55 @@
                     </div>
                 </div>
             </div>
-            <div class="main_meta_data">
+            <div class="title">
+                <p>Headline</p>
+                <div class="title_input">
+                    <textarea class="border textarea" type="text" placeholder="A worm and cozy jackets..."></textarea>
+                    <img class="title_img" src="./img/Vector (4).png" alt="">
+                </div>
+            </div>
+            <div class="meta_data flex">
+                <div class="meta_data_detail">
+                    <h3 class="font-color" style="margin: 0px;">Discountable</h3>
+                    <p class="font-color" style="margin: 10px 0;">When unchecked discounts will not be applied to this product.</p>
+                </div>
+                <div class="meta_data_button">
+                    <!-- ================ -->
+
+                </div>
+            </div>
+            <div class="meta_data">
+                <div class="meta_data_detail">
+                    <h3 class="font-color" style="margin: 0px;">Orginize</h3>
+                    <p class="font-color" style="margin: 10px 0;">To start selling, all you need is a name and a price.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="title">
+                    <p>Search</p>
+                    <div class="title_input">
+                        <input class="border" type="text" placeholder="Winter Jacket">
+                        <img class="title_img" src="./img/Vector (4).png" alt="">
+                    </div>
+                </div>
+                <div class="title">
+                    <p>Sub Title</p>
+                    <div class="title_input">
+                        <select class="collection border" id="">
+                            <option selected>Select Collection</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="GE">Germany</option>
+                        </select>
+                        <img class="collection_img" src="./img/Vector.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="main_meta_data">
                 <div class="meta_data flex">
                     <div class="meta_data_detail">
                         <h3 class="font-color" style="margin: 0px;">Meta Data</h3>
@@ -654,18 +705,18 @@
                         <div class="delele_button">
                             <a href="#"><img class="border" src="./img/Icon (2).png" alt=""></a>
                         </div>
-                    </div>  
-                </div>
-                <div class="next">
-                    <a href="#" class="a">Next</a>
+                    </div> 
                 </div>  
+            </div> -->
+             <div class="next">
+                <a href="#" class="a">Next</a>
             </div>
         </div>  
     </div>
 </div>
 
 
-<!-- <==========================collection popup======================================> -->
+<!-- <==========================Add collection popup======================================> -->
 
 <div class="add_group border" id="popupContainer" style="display: none;">
     <div class="add_group_header">
@@ -758,7 +809,7 @@
 
 
 
-
+<!-- <============================Product-Collection=============================> -->
 
 <script>
     var product_page = document.getElementById('product-page');
@@ -792,7 +843,10 @@
 
     function togglePopup() {
         var popupContainer = document.getElementById('popupContainer');
+        var bgBlur = document.getElementById("bgblur")
+       
         popupContainer.style.display = 'block';
+        // bgblur.style.filter = blur(5px);
         
     }
 
