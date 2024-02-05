@@ -4,53 +4,60 @@
     <link rel="stylesheet" href="./css/demo.css">
 </head>
 <body>
-<div class="main_navbar flex">
+<div class="main_navbar flex" id="blurContainer" >
     <div class="nav_bar">
         <h1>Microcart</h1>
         <div class="gen_menu">
             <p>General</p>
-            <li>
-                <img src="./img/Frame.png" alt="">
-                <a href="#">Dashboard </a>
-                <span class="gen_arrow"><img src="./img/Vector.png"></span>
-            </li>
-            <li>
-                <img src="./img/Frame (1).png" alt="">
-                <a href="#">Order</a>
-                <span class="gen_arrow"><img src="./img/Vector.png"></span>
-            </li>
-            <li>
-                <img src="./img/Frame (2).png" alt="">
-                <a href="#">Products</a>
-                <span class="gen_arrow"><img src="./img/Vector.png"></span>
-            </li>
-            <li>
-                <img src="./img/Icon.png" alt="">
-                <a href="#">Customers</a>
-                <span class="gen_arrow"><img src="./img/Vector.png"></span>
-            </li>
-            <li>
-                <img src="./img/Frame (3).png" alt="">
-                <a href="#">Discount</a>
-                <span class="gen_arrow"><img src="./img/Vector.png"></span>
-            </li>
-            <li>
-                <img src="./img/Frame (4).png" alt="">
-                <a href="#">Gift Cards</a>
-                <span class="gen_arrow"><img src="./img/Vector.png"></span>
-            </li>
-            <li>
-                <img src="./img/Frame (5).png" alt="">
-                <a href="#">Pricing</a>
-                <span class="gen_arrow"><img src="./img/Vector.png"></span>
-            </li>  
+            <ul>
+                <li>
+                    <a href="#"><img src="./img/Frame.png" alt="">Dashboard 
+                    <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                    </a>
+                </li>
+                <li>
+                    
+                    <a href="#"><img src="./img/Frame (1).png" alt="">Order
+                    <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                    </a>
+                </li>
+                <li>
+                    
+                    <a href="#"><img src="./img/Frame (2).png" alt="">Products
+                    <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                    </a>
+                </li>
+                <li>
+                    
+                    <a href="#"><img src="./img/Icon.png" alt="">Customers
+                    <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                    </a>
+                </li>
+                <li>
+                    
+                    <a href="#"><img src="./img/Frame (3).png" alt="">Discount
+                    <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                    </a>
+                </li>
+                <li>
+                    
+                    <a href="#"><img src="./img/Frame (4).png" alt="">Gift Cards
+                    <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                    </a>
+                </li>
+                <li>
+                    
+                    <a href="#"><img src="./img/Frame (5).png" alt="">Pricing
+                    <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                    </a>
+                </li> 
+            </ul>
         </div>
         <div class="Sales_Channels">
             <p>Sales Channels</p>
             <a href="#">
                 <img src="./img/Frame (6).png" alt="">
-                Onlin Store
-                
+                Onlin Store    
             </a>
 
         </div>
@@ -59,17 +66,19 @@
             <p>Your trial ends on January 20.</p>
             <p>Select a plan to extend your trial for just ₹20/month for your first 3 months.</p>
 
-            <button>Select Plan</button>
-            <!-- <a href="#"><p>Select Plan</p></a>  -->
+            <!-- <button>Select Plan</button> -->
+            <a href="#"><p class="button1">Select Plan</p></a> 
         </div>
-        <div class="help">
-            <img src="./img/Frame (7).png" alt="">
-            <a href="#">Help</a>
-        </div>
-        <div class="setting">
-            <img src="./img/Frame (8).png" alt="">
-            <a href="#">Settings</a>
-        </div>
+        <ul class="gen_menu">
+            <li>
+                <a href="#"><img src="./img/Frame (7).png" alt="">
+                Help</a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/Frame (8).png" alt="">
+                    Settings</a>
+            </li>
+        </ul>
 
     </div>
 
@@ -82,11 +91,11 @@
                 <div class="top_div1">
                     <a href="#">Home</a>
                     <p>/</p>
-                    <p style="font-size: 20px;"><b>Customer</b></p>
+                    <p style="font-size: .875rem;"><b>Customer</b></p>
                 </div>
             </div>
             <div class="search_bar">
-                <div class="input border    ">
+                <div class="input">
                     <a href="#"> <img src="./img/Frame (10).png" alt=""></a>
                     <input class="border" type="text" placeholder="Search">
                     <!-- <p>Search</p> -->
@@ -115,8 +124,8 @@
                         </a>
                     </div>
                 </div>
-                <table>
-                    <tr>
+                <table class="font_size">
+                    <tr class="border">
                         <td colspan="5">
                             <div class="search_input1">
                                 <div class="search_input">
@@ -130,13 +139,13 @@
                             </div> 
                         </td>
                     </tr>
-                    <tr>
-                        <th>Date Added</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Orders</th>
+                    <tr class="border">
+                        <th class="font_size">Date Added</th>
+                        <th class="font_size">Name</th>
+                        <th class="font_size">Email</th>
+                        <th class="font_size">Orders</th>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>20 Jan 2024</td>
                         <td>Gregory Dickens</td>
                         <td>Violette1@yahoo.com</td>
@@ -144,7 +153,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>30 Mar 2024</td>
                         <td>Clifford Wiza III</td>
                         <td>Whitney.Hegmann54@yahoo.com</td>
@@ -152,7 +161,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>24 Apr2024</td>
                         <td>Stacey Kemmer</td>
                         <td>Berneice_Hand74@gmail.com</td>
@@ -160,7 +169,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>05 Dec 2024</td>
                         <td>Julius Funk</td>
                         <td>Dolly.Hyatt@gmail.com</td>
@@ -168,7 +177,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>09 Aug 2024</td>
                         <td>Melvin Lindgren</td>
                         <td>Jermain16@yahoo.com</td>
@@ -176,7 +185,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>20 Jan 2024</td>
                         <td>Lena Bayer</td>
                         <td>Tyrese_Lynch@yahoo.com</td>
@@ -184,7 +193,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>30 Mar 2024</td>
                         <td>Ross Wyman</td>
                         <td>Americo_Rippin@yahoo.com</td>
@@ -192,7 +201,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>24 Apr2024</td>
                         <td>Opal Wehner</td>
                         <td>Reuben.Gaylord98@hotmail.com</td>
@@ -200,7 +209,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>05 Dec 2024</td>
                         <td>Dorothy Nitzsche</td>
                         <td>Sheila48@gmail.com</td>
@@ -208,7 +217,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>09 Aug 2024</td>
                         <td>Kristin Kovacek</td>
                         <td>Tracy14@hotmail.com</td>
@@ -216,7 +225,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td>19 Sep 2024</td>
                         <td>Olivia Rhye</td>
                         <td>Jaeden.Farrell@yahoo.com</td>
@@ -224,7 +233,7 @@
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border">
                         <td colspan="5">
                             <div class="ination">
                                 <span class="prev_pagination">
@@ -269,7 +278,7 @@
                         </a>
                     </div>
                 </div>
-                <table>
+                <table class="font_size">
                     <tr>
                         <td colspan="2">
                             <div class="search_input1">
@@ -285,10 +294,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Title</th>
-                        <th>Members</th>
+                        <th class="font_size">Title</th>
+                        <th class="font_size">Members</th>
                     </tr>
-                    <tr>
+                    <tr class="font_size">
                         <td>soluta voluptatem quis</td>
                         <td>62218
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
@@ -358,7 +367,7 @@
                         <td colspan="5">
                             <div class="ination">
                                 <span class="prev_pagination">
-                                    <a href="#"><img src="./img/Vector (1).png" alt=""></a>
+                                    <a class="border" href="#"><img src="./img/Vector (1).png" alt=""></a>
                                 </span>
                                 <ul><li><a href="">1</a></li></ul>
                                 <ul><li><a href="">2</a></li></ul>
@@ -381,21 +390,21 @@
 
         <!-- <=======================Add group======================================> -->
 
-<div class="bg-1">
+
 <div class="add_group border" id="popupContainer" style="display: none;">
     <div class="add_group_header">
         <h2 class="h2 font-color">Add Group</h2>
-        <a href="#" onclick="closePopup()" class="border close"><img src="./img/x.png" alt=""></a>
+        <a href="#" onclick="closePopup()" ><img class="border close" src="./img/x.png" alt=""></a>
     </div>
     <div class="add_group_pop flex">
         <div class="sub_add_group_pop">
-            <li class="li "><a href="#" class="a font-color font-size">General Details</a></li>
-            <li class="li "><a href="#" class="a font-color font-size">Customer</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">General Details</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">Customer</a></li>
         </div>
         <div class="main_detail">
             <div class="details">
-                <h3 class="font-color" style="margin: 0px;">Details</h3>
-                <p class="font-color" style="margin: 10px 0;">Please enter a title and handle of Collection</p>
+                <h3 class="font-color font-size" style="margin: 0px;">Details</h3>
+                <p class="font-color font_size" style="margin: 10px 0;">Please enter a title and handle of Collection</p>
             </div>
             <div class="title">
                 <p>Title</p>
@@ -407,13 +416,13 @@
             <div class="main_meta_data">
                 <div class="meta_data flex">
                     <div class="meta_data_detail">
-                        <h3 class="font-color" style="margin: 0px;">Meta Data</h3>
-                        <p class="font-color" style="margin: 10px 0;">Add variations of this product.</p>
+                        <h3 class="font-color font-size" style="margin: 0px;">Meta Data</h3>
+                        <p class="font-color font_size" style="margin: 10px 0;">Add variations of this product.</p>
                     </div>
                     <div class="meta_data_button">
                         <img src="./img/Vector (5).png" alt="">
                         <div class="meta_plus_button">
-                            <a href="#" class="a border">
+                            <a href="#" class="a border1">
                                 <img src="./img/Icon (1).png" alt="">
                                 <p>Add</p> 
                             </a>
@@ -485,15 +494,17 @@
 
     // <================== PopUp Add Group =============================>
     
-    function togglePopup() {
-        var popupContainer = document.getElementById('popupContainer');
+    var popupContainer = document.getElementById('popupContainer');
+    var blurContainer = document.getElementById("blurContainer");
+    
+    function togglePopup() { 
         popupContainer.style.display = 'block';
-        
+        blurContainer.classList.add("blur");  
     }
 
     function closePopup() {
-        var popupContainer = document.getElementById('popupContainer');
         popupContainer.style.display = 'none';
+        blurContainer.classList.remove("blur");
     }
   </script>
 </body>

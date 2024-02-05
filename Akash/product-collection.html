@@ -5,53 +5,60 @@
 </head>
 <body>
    
-<div class="main_navbar">
+<div class="main_navbar" id="blurContainer">
     <div class="nav_bar">
         <h1>Microcart</h1>
         <div class="gen_menu">
             <p>General</p>
+        <ul>
             <li>
-                <img src="./img/Frame.png" alt="">
-                <a href="#">Dashboard </a>
+                <a href="#"><img src="./img/Frame.png" alt="">Dashboard 
                 <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                </a>
             </li>
             <li>
-                <img src="./img/Frame (1).png" alt="">
-                <a href="#">Order</a>
+                
+                <a href="#"><img src="./img/Frame (1).png" alt="">Order
                 <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                </a>
             </li>
             <li>
-                <img src="./img/Frame (2).png" alt="">
-                <a href="#">Products</a>
+                
+                <a href="#"><img src="./img/Frame (2).png" alt="">Products
                 <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                </a>
             </li>
             <li>
-                <img src="./img/Icon.png" alt="">
-                <a href="#">Customers</a>
+                
+                <a href="#"><img src="./img/Icon.png" alt="">Customers
                 <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                </a>
             </li>
             <li>
-                <img src="./img/Frame (3).png" alt="">
-                <a href="#">Discount</a>
+                
+                <a href="#"><img src="./img/Frame (3).png" alt="">Discount
                 <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                </a>
             </li>
             <li>
-                <img src="./img/Frame (4).png" alt="">
-                <a href="#">Gift Cards</a>
+                
+                <a href="#"><img src="./img/Frame (4).png" alt="">Gift Cards
                 <span class="gen_arrow"><img src="./img/Vector.png"></span>
+                </a>
             </li>
             <li>
-                <img src="./img/Frame (5).png" alt="">
-                <a href="#">Pricing</a>
+                
+                <a href="#"><img src="./img/Frame (5).png" alt="">Pricing
                 <span class="gen_arrow"><img src="./img/Vector.png"></span>
-            </li>  
+                </a>
+            </li> 
+        </ul> 
         </div>
         <div class="Sales_Channels">
             <p>Sales Channels</p>
             <a href="#">
                 <img src="./img/Frame (6).png" alt="">
-                Onlin Store
-                
+                Onlin Store 
             </a>
 
         </div>
@@ -60,18 +67,20 @@
             <p>Your trial ends on January 20.</p>
             <p>Select a plan to extend your trial for just ₹20/month for your first 3 months.</p>
 
-            <button>Select Plan</button>
-            <!-- <a href="#"><p>Select Plan</p></a>  -->
+            <!-- <button>Select Plan</button> -->
+            <a href="#"><p class="button1">Select Plan</p></a> 
         </div>
-        <div class="help">
-            <img src="./img/Frame (7).png" alt="">
-            <a href="#">Help</a>
-        </div>
-        <div class="setting">
-            <img src="./img/Frame (8).png" alt="">
-            <a href="#">Settings</a>
-        </div>
-
+        
+        <ul class="gen_menu">
+            <li>
+                <a href="#"><img src="./img/Frame (7).png" alt="">
+                Help</a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/Frame (8).png" alt="">
+                    Settings</a>
+            </li>
+        </ul>
     </div>
 
 
@@ -82,11 +91,11 @@
                 <div class="top_div1">
                     <a href="#">Home</a>
                     <p>/</p>
-                    <p style="font-size: 20px;"><b>Products</b></p>
+                    <p style="font-size: .875rem;"><b>Products</b></p>
                 </div>
             </div>
             <div class="search_bar">
-                <div class="input border">
+                <div class="input">
                     <a href="#"> <img src="./img/Frame (10).png" alt=""></a>
                     <input type="text" placeholder="Search">
                     <!-- <p>Search</p> -->
@@ -117,7 +126,7 @@
                 </div>
                 <div class="tablemenu2 flex">
                     <a href="#" class="a" style="margin: 0 10px;">
-                        <div class="button">
+                        <div class="button" onclick="popupAddProduct()">
                             <img src="./img/Frame (12).png" alt="">
                             <p>Add Product</p>
                         </div>
@@ -156,197 +165,197 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Product Name
+                        <th class="font_size">Product Name
                             <div class="arrow">
                                 <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
                                 <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
                             </div>
                         </th>
-                        <th>Collection
+                        <th class="font_size">Collection
                             <div class="arrow">
                                 <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
                                 <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
                             </div>
                         </th>
-                        <th>Status</th>
-                        <th>Availability
+                        <th class="font_size">Status</th>
+                        <th class="font_size">Availability
                             <div class="arrow">
                                 <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
                                 <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
                             </div>
                         </th>
-                        <th>Inventory</th>
+                        <th class="font_size">Inventory</th>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar.png" alt="">
                             <p>WoolenWhisper</p>
                         </td>
-                        <td>Women's Wear 
+                        <td class="font_size">Women's Wear 
                             <span class="count_collection">+12</span>
                         </td>
-                        <td>
+                        <td class="font_size">
                             <span class="published">Published</span></td>
-                        <td>Website
+                        <td class="font_size">Website
                             <span class="count_collection">+3</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (1).png" alt="">
                             <p>VelvetVogue</p>
                         </td>
-                        <td>Women's Wear
+                        <td class="font_size">Women's Wear
                             <span class="count_collection">+1</span>
                         </td>
-                        <td><span class="draft">Draft</span></td>
-                        <td>-</td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size"><span class="draft">Draft</span></td>
+                        <td class="font_size">-</td>
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (2).png" alt="">
                             <p>SilkSerenity</p>
                         </td>
-                        <td>-</td>
-                        <td><span class="published">Published</span></td>
-                        <td>App
+                        <td class="font_size">-</td>
+                        <td class="font_size"><span class="published">Published</span></td>
+                        <td class="font_size">App
                             <span class="count_collection">+2</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (3).png" alt="">
                             <p>DenimDazzle</p>
                         </td>
-                        <td>Top Wear
+                        <td class="font_size">Top Wear
                             <span class="count_collection">+12</span>
                         </td>
-                        <td><span class="published">Published</span></td>
-                        <td>Shopee
+                        <td class="font_size"><span class="published">Published</span></td>
+                        <td class="font_size">Shopee
                             <span class="count_collection">+5</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (4).png" alt="">
                             <p>SatinSculpt</p>
                         </td>
-                        <td>Top Wear
+                        <td class="font_size">Top Wear
                             <span class="count_collection">+12</span>
                         </td>
-                        <td><span class="published">Published</span></td>
-                        <td>Lazada
+                        <td class="font_size"><span class="published">Published</span></td>
+                        <td class="font_size">Lazada
                             <span class="count_collection">+7</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (5).png" alt="">
                             <p>CottonCharm</p>
                         </td>
-                        <td>Women's Wear
+                        <td class="font_size">Women's Wear
                             <span class="count_collection">+12</span>
                         </td>
-                        <td><span class="draft">Draft</span></td>
-                        <td>Website
+                        <td class="font_size"><span class="draft">Draft</span></td>
+                        <td class="font_size">Website
                             <span class="count_collection">+12</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (6).png" alt="">
                             <p>TweedTreasure</p>
                         </td>
-                        <td>Women's Wear
+                        <td class="font_size">Women's Wear
                             <span class="count_collection">+12</span>
                         </td>
-                        <td><span class="draft">Draft</span></td>
-                        <td>Amazon
+                        <td class="font_size"><span class="draft">Draft</span></td>
+                        <td class="font_size">Amazon
                             <span class="count_collection">+5</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (7).png" alt="">
                             <p>LaceLoom</p>
                         </td>
-                        <td>Women's Wear
+                        <td class="font_size">Women's Wear
                             <span class="count_collection">+12</span>
                         </td>
-                        <td><span class="published">Published</span></td>
-                        <td>App
+                        <td class="font_size"><span class="published">Published</span></td>
+                        <td class="font_size">App
                             <span class="count_collection">+2</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (8).png" alt="">
                             <p>ChiffonChic</p>
                         </td>
-                        <td>Women's Wear
+                        <td class="font_size">Women's Wear
                             <span class="count_collection">+12</span>
                         </td>
-                        <td><span class="published">Published</span></td>
-                        <td>Shopee
+                        <td class="font_size"><span class="published">Published</span></td>
+                        <td class="font_size">Shopee
                             <span class="count_collection">+5</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (9).png" alt="">
                             <p>OrganzaOpulence</p>
                         </td>
-                        <td>Top Wear
+                        <td class="font_size">Top Wear
                             <span class="count_collection">+12</span>
                         </td>
-                        <td><span class="draft">Draft</span></td>
-                        <td>Website
+                        <td class="font_size"><span class="draft">Draft</span></td>
+                        <td class="font_size">Website
                             <span class="count_collection">+3</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="font_size">
                             <img src="./img/Avatar (10).png" alt="">
                             <p>TaffetaTrend</p>
                         </td>
-                        <td>Top Wear
+                        <td class="font_size">Top Wear
                             <span class="count_collection">+12</span>
                         </td>
-                        <td><span class="draft">Draft</span></td>
-                        <td>Website
+                        <td class="font_size"><span class="draft">Draft</span></td>
+                        <td class="font_size">Website
                             <span class="count_collection">+3</span>
                         </td>
-                        <td>120 in stock for 2 variant(s)
+                        <td class="font_size">120 in stock for 2 variant(s)
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
@@ -363,7 +372,7 @@
                                 <ul><li><a href="">8</a></li></ul>
                                 <ul><li><a href="">9</a></li></ul>
                                 <ul><li><a href="">10</a></li></ul>
-                                <span class="next_pagination">
+                                <span class="next_pagination revers">
                                     <a href="#"><img src="./img/Vector (1).png" alt=""></a>
                                 </span>
                             </div>
@@ -414,123 +423,123 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Collection
+                        <th class="font_size">Collection
                             <div class="arrow">
                                 <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
                                 <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
                             </div>
                         </th>
-                        <th>Handle
+                        <th class="font_size">Handle
                             <div class="arrow">
                                 <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
                                 <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
                             </div>
                         </th>
-                        <th>Created  at</th>
-                        <th>Updated at
+                        <th class="font_size">Created  at</th>
+                        <th class="font_size">Updated at
                             <div class="arrow">
                                 <a id="upArrow" href="#"><img src="./img/Vector (3).png" alt=""></a>
                                 <a id="downArrow" href="#"><img src="./img/Vector (2).png" alt=""></a>
                             </div>
                         </th>
-                        <th>Products</th>
+                        <th class="font_size">Products</th>
                     </tr>
                     <tr>
-                        <td>Ethnic Wear</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Ethnic Wear</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Top Wear</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Top Wear</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Bottom Wear</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Bottom Wear</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Women’s Wear</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Women’s Wear</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Men’s wear</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Men’s wear</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Best Collection</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Best Collection</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Best Seller</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Best Seller</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>All time best</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">All time best</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Crop Tops</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Crop Tops</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Children Wear</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Children Wear</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Ethnic Wear</td>
-                        <td>/Ethnic Wear</td>
-                        <td>9 May 2025</td>
-                        <td>12 May 2024</td>
-                        <td>1200
+                        <td class="font_size">Ethnic Wear</td>
+                        <td class="font_size">/Ethnic Wear</td>
+                        <td class="font_size">9 May 2025</td>
+                        <td class="font_size">12 May 2024</td>
+                        <td class="font_size">1200
                             <span class="dot"><a href="#"><img src="./img/3dot.png" alt=""></a></span>
                         </td>
                     </tr>
@@ -547,7 +556,7 @@
                                 <ul><li><a href="">8</a></li></ul>
                                 <ul><li><a href="">9</a></li></ul>
                                 <ul><li><a href="">10</a></li></ul>
-                                <span class="next_pagination">
+                                <span class="next_pagination revers">
                                     <a href="#"><img src="./img/Vector (1).png" alt=""></a>
                                 </span>
                             </div>
@@ -560,24 +569,24 @@
 </div>
 <!-- <==========================Add Product popup======================================> -->
 
-<div class="add_group border" id="" style="display: block;">
+<div class="add_group border" id="popupAddProduct" style="display: none;">
     <div class="add_group_header">
         <h2 class="h2 font-color">Add Product</h2>
-        <a href="#" onclick="closePopup()" class="border close"><img src="./img/x.png" alt=""></a>
+        <a href="#" onclick="closeProductPopup()" class="border close"><img src="./img/x.png" alt=""></a>
     </div>
     <div class="add_group_pop flex">
         <div class="sub_add_group_pop">
-            <li class="li "><a href="#" class="a font-color font-size">General Details</a></li>
-            <li class="li "><a href="#" class="a font-color font-size">Sales Channel</a></li>
-            <li class="li "><a href="#" class="a font-color font-size">Variants</a></li>
-            <li class="li "><a href="#" class="a font-color font-size">Attributes</a></li>
-            <li class="li "><a href="#" class="a font-color font-size">Sale</a></li>
-            <li class="li "><a href="#" class="a font-color font-size">SEO</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">General Details</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">Sales Channel</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">Variants</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">Attributes</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">Sale</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">SEO</a></li>
         </div>
         <div class="main_detail">
             <div class="details">
-                <h3 class="font-color" style="margin: 0px;">Details</h3>
-                <p class="font-color" style="margin: 10px 0;">Please enter a title and handle of Collection</p>
+                <h3 class="font-color font-size" style="margin: 0px;">Details</h3>
+                <p class="font-color font_size" style="margin: 10px 0;">Please enter a title and handle of Collection</p>
             </div>
             <div class="flex">
                 <div class="title">
@@ -620,23 +629,23 @@
             </div>
             <div class="meta_data flex">
                 <div class="meta_data_detail">
-                    <h3 class="font-color" style="margin: 0px;">Discountable</h3>
-                    <p class="font-color" style="margin: 10px 0;">When unchecked discounts will not be applied to this product.</p>
+                    <h3 class="font-color font-size" style="margin: 0px;">Discountable</h3>
+                    <p class="font-color font_size" style="margin: 10px 0;">When unchecked discounts will not be applied to this product.</p>
                 </div>
-                <div class="meta_data_button">
-                    <!-- ================ -->
-
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
                 </div>
             </div>
             <div class="meta_data">
                 <div class="meta_data_detail">
-                    <h3 class="font-color" style="margin: 0px;">Orginize</h3>
-                    <p class="font-color" style="margin: 10px 0;">To start selling, all you need is a name and a price.</p>
+                    <h3 class="font-color font-size" style="margin: 0px;">Orginize</h3>
+                    <p class="font-color font_size" style="margin: 10px 0;">To start selling, all you need is a name and a price.</p>
                 </div>
             </div>
             <div class="flex">
                 <div class="title">
-                    <p>Search</p>
+                    <p>Type</p>
                     <div class="title_input">
                         <input class="border" type="text" placeholder="Winter Jacket">
                         <img class="title_img" src="./img/Vector (4).png" alt="">
@@ -656,59 +665,28 @@
                     </div>
                 </div>
             </div>
-
-
-
-            <!-- <div class="main_meta_data">
-                <div class="meta_data flex">
-                    <div class="meta_data_detail">
-                        <h3 class="font-color" style="margin: 0px;">Meta Data</h3>
-                        <p class="font-color" style="margin: 10px 0;">Add variations of this product.</p>
+            <div class="title">
+                <p>Tag (Comma separated)</p>
+                <div class="title_input">
+                    <input class="border" type="text" placeholder="/Winter-Jacket, Women’s Wear">
+                    <img class="title_img" src="./img/Vector (4).png" alt="">
+                </div>
+                <div class="check_box">
+                    <div class="flex">
+                        <input type="checkbox" name="Winter-Jacket" id="WinterJacket" value="id="Winter Jacket"">
+                        <label for="Winter Jacket" >Winter Jacket</label>
                     </div>
-                    <div class="meta_data_button">
-                        <img src="./img/Vector (5).png" alt="">
-                        <div class="meta_plus_button">
-                            <a href="#" class="a border">
-                                <img src="./img/Icon (1).png" alt="">
-                                <p>Add</p> 
-                            </a>
-                        </div>
+                    <div class="flex">
+                        <input type="checkbox" name="Jacket" id="Jacket" value="Jacket">
+                        <label for="Jacket">Jacket</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" name="Women’s-Wear" id="WomensWear" value="Women’s Wear">
+                        <label for="Women’s Wear">Women’s Wear</label>
                     </div>
                 </div>
-                <div class="flex">
-                    <div class="title key">
-                        <p>Key</p>
-                        <div class="key_input">
-                            <input class="border" type="text" placeholder="Key">
-                            <img class="title_img" src="./img/Vector (4).png" alt="">
-                        </div>
-                        <div class="key_input">
-                            <input class="border" type="text" placeholder="Key">
-                            <img class="title_img" src="./img/Vector (4).png" alt="">
-                        </div>
-                    </div>
-                    <div class="title value">
-                        <p>Value</p>
-                        <div class="key_input">
-                            <input class="border" type="text" placeholder="Value">
-                            <img class="title_img" src="./img/Vector (4).png" alt="">
-                        </div>
-                        <div class="key_input">
-                            <input class="border" type="text" placeholder="Value">
-                            <img class="title_img" src="./img/Vector (4).png" alt="">
-                        </div>
-                    </div>
-                    <div class="deletebutton">
-                        <div class="delele_button">
-                            <a href="#" ><img class="border" src="./img/Icon (2).png" alt=""></a>
-                        </div>
-                        <div class="delele_button">
-                            <a href="#"><img class="border" src="./img/Icon (2).png" alt=""></a>
-                        </div>
-                    </div> 
-                </div>  
-            </div> -->
-             <div class="next">
+            </div>
+            <div class="next">
                 <a href="#" class="a">Next</a>
             </div>
         </div>  
@@ -725,13 +703,13 @@
     </div>
     <div class="add_group_pop flex">
         <div class="sub_add_group_pop">
-            <li class="li "><a href="#" class="a font-color font-size">General Details</a></li>
-            <li class="li "><a href="#" class="a font-color font-size">Customer</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">General Details</a></li>
+            <li class="li "><a href="#" class="a font-color font_size">Customer</a></li>
         </div>
         <div class="main_detail">
             <div class="details">
-                <h3 class="font-color" style="margin: 0px;">Details</h3>
-                <p class="font-color" style="margin: 10px 0;">Please enter a title and handle of Collection</p>
+                <h3 class="font-color font-size" style="margin: 0px;">Details</h3>
+                <p class="font-color font_size" style="margin: 10px 0;">Please enter a title and handle of Collection</p>
             </div>
             <div class="flex">
                 <div class="title">
@@ -752,13 +730,13 @@
             <div class="main_meta_data">
                 <div class="meta_data flex">
                     <div class="meta_data_detail">
-                        <h3 class="font-color" style="margin: 0px;">Meta Data</h3>
-                        <p class="font-color" style="margin: 10px 0;">Add variations of this product.</p>
+                        <h3 class="font-color font-size" style="margin: 0px;">Meta Data</h3>
+                        <p class="font-color font_size" style="margin: 10px 0;">Add variations of this product.</p>
                     </div>
                     <div class="meta_data_button">
                         <img src="./img/Vector (5).png" alt="">
                         <div class="meta_plus_button">
-                            <a href="#" class="a border">
+                            <a href="#" class="a border1">
                                 <img src="./img/Icon (1).png" alt="">
                                 <p>Add</p> 
                             </a>
@@ -838,21 +816,34 @@
             product_frame.style.display = 'none';
         }
     }
-
     // <================== PopUp Add Group =============================>
 
-    function togglePopup() {
-        var popupContainer = document.getElementById('popupContainer');
-        var bgBlur = document.getElementById("bgblur")
-       
-        popupContainer.style.display = 'block';
-        // bgblur.style.filter = blur(5px);
-        
+    var popup_Add_Product = document.getElementById("popupAddProduct");
+    var blurContainer = document.getElementById("blurContainer");
+    
+    function popupAddProduct(){
+        popup_Add_Product.style.display = 'block';
+        blurContainer.classList.add("blur");  
     }
 
+    function closeProductPopup(){
+        popup_Add_Product.style.display = 'none';
+        blurContainer.classList.remove("blur");
+    }
+    // <================== PopUp Add Group =============================>
+
+    var popupContainer = document.getElementById('popupContainer');
+    var blurContainer = document.getElementById("blurContainer");
+    
+    
+    function togglePopup() {
+        popupContainer.style.display = 'block';
+        blurContainer.classList.add("blur");  
+    }
+    
     function closePopup() {
-        var popupContainer = document.getElementById('popupContainer');
         popupContainer.style.display = 'none';
+        blurContainer.classList.remove("blur");
     }
 </script>
 </body>
