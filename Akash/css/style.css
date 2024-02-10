@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+@font-face {
+  font-family: "General Sans Variable";
+  src:  url('../fonts/GeneralSans-Regular.otf') format('opentype'),
+        url('../fonts/myfont.ttf') format('truetype');
+}
+*{
+    font-family: "General Sans Variable";
+}
+
+/* ============LEFT SIDE======================= */
+.left_side{
+    width: 260px;
+    border-right: 1px solid #E3E3E3;
+}
+.left_side h1.title{
+    color: #463B52;
+    font-family: "Space Grotesk";
+    font-size: 24px;
+    font-style: normal;
+    line-height: 40px;
+}
+.general h2{
+    color: rgba(52, 64, 84, 0.40);
+    font-family: "General Sans Variable";
+    font-size: 15px;
+    /* line-height: 16px; */
+}
+.menu li a {
+    color: #463B52;
+    font-family: "General Sans Variable";
+    font-size: 14px;
+    line-height: 24px;
+}
+.menu li:hover{
+    background-color: #F0E6FA;
+}
+.menu_arrow{
+    display: none;
+}
+.menu li:hover .menu_arrow{
+    display: block;
+}
+.just_trial{
+    background-color: #FBFAFD;
+}
+.just_trial h2{
+    color: #463B52;
+    font-weight: 600;
+    font-family: "General Sans Variable";
+}
+p.plan_data{
+    color: #463B52;
+}
+.just_trial button{
+    border-color: #F3F3F3;
+    color: #463B52;
+    font-size: 14px;
+    line-height: 16px;
+}
